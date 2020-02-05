@@ -1,6 +1,11 @@
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.streaming._
+package demo
 
+import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.apache.spark.{SparkConf, SparkContext}
+
+/**
+  * 监控指定文件夹，单词计数
+  */
 object SparkStreamingDemo {
   def main(args: Array[String]): Unit = {
 //    val conf=new SparkConf().setMaster("spark://192.168.154.10:7077").setAppName("SparkStreamingDemo");
